@@ -4,4 +4,4 @@ for i in range(0, 100):
         j = 44
         print("{:02d}{:c} ".format(i, j), end="")
     else:
-        print("{:02d}".format(i), end="")
+        print("{:02d}".format(i))
