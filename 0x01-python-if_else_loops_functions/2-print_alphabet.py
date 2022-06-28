@@ -1,0 +1,2 @@
+alp = 'abcdefghijklmnopqrstuvwxyz'
+print(alp)
