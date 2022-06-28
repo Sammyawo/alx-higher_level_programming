@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-alp = 'abcdefghijklmnopqrstuvwxyz'
-print(alp)
+for i in range(97, 123):
+    print("{:c}".format(i), end="")
