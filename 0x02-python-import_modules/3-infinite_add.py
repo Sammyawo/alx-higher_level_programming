@@ -4,7 +4,7 @@ def main():
     for i in range(1, len(sys.argv)):
         j += sys.argv[i]
 
-    print("{}".format(j), end="")
+    print("{}".format(j))
 
 
 if __name__ == "__main__":
