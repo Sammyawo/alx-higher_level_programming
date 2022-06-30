@@ -2,7 +2,7 @@
 def main():
     j = 0
     for i in range(1, len(sys.argv)):
-        j = sys.argv + j
+        j = int(sys.argv[i]) + j
 
     print("{:d}".format(j), end="")
 
