@@ -7,15 +7,15 @@ def main():
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     else:
-        a = sys.argv[1]
-        b = sys.argv[3]
         p = 0
-         sign = ['+', '-', '*', '/']
-         for i in sign:
-             if sys.argv[2] == i:
-                 p = 1
-                 break
+        sign = ['+', '-', '*', '/']
+        for i in sign:
+            if sys.argv[2] == i:
+                p = 1
+                break
         if p == 1:
+            a = sys.argv[1]
+            b = sys.argv[3]
             if sys.argv[2] == sign[0]:
                 print("{:s} + {:s} = {:d}".format(a, b, add(int(a), int(b))))
             elif sys.argv[2] == sign[1]:
