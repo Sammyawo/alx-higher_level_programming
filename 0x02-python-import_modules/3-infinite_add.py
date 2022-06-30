@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def main():
-    import sys
-
     j = 0
     for i in range(1, len(sys.argv)):
         j += sys.argv[i]
@@ -10,4 +8,5 @@ def main():
 
 
 if __name__ == "__main__":
+    import sys
     main()
