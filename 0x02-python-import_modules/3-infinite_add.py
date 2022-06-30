@@ -2,9 +2,9 @@
 def main():
     j = 0
     for i in range(1, len(sys.argv)):
-        j += int(sys.argv[i])
+        j += sys.argv[i]
 
-    print("{:d}".format(j), end="")
+    print("{}".format(j), end="")
 
 
 if __name__ == "__main__":
