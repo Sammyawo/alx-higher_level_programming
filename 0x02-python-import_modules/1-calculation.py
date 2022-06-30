@@ -17,6 +17,3 @@ def main():
 
     result = div(a, b)
     print("{:d} / {:d} = {:.0f}".format(a, b, result))
-
-if __name__ == "__main__":
-    main()
