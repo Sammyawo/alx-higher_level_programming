@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import sys
-
 def main():
+    import sys
+
     j = 0
     for i in range(1, len(sys.argv)):
         j += sys.argv[i]
