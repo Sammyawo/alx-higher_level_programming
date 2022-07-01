@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def main():
-    from calculation_1 import add, sub, mul, div
+from calculation_1 import add, sub, mul, div
 
+
+def main():
     a = 10
     b = 5
     result = add(a, b)
