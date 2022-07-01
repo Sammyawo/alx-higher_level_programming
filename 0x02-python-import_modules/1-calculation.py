@@ -3,8 +3,10 @@ from calculation_1 import add, sub, mul, div
 
 
 def main():
+
     a = 10
     b = 5
+
     result = add(a, b)
     print("{:d} + {:d} = {:d}".format(a, b, result))
 
