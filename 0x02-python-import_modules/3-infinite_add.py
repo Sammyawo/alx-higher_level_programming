@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
+
 def main():
     j = 0
     for i in range(1, len(sys.argv)):
-        j += sys.argv[i]
+        j += int(sys.argv[i])
 
     print("{:d}".format(j))
 
