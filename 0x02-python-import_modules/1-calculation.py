@@ -1,22 +1,21 @@
 #!/usr/bin/python3
-from calculation_1 import add, sub, mul, div
-
-
 def main():
+    from calculation_1 import add, sub, mul, div
+
+
     a = 10
     b = 5
+    result1 = add(a, b)
+    print("{:d} + {:d} = {:d}".format(a, b, result1))
 
-    result = add(a, b)
-    print("{:d} + {:d} = {:d}".format(a, b, result))
+    result2 = sub(a, b)
+    print("{:d} - {:d} = {:d}".format(a, b, result2))
 
-    result = sub(a, b)
-    print("{:d} - {:d} = {:d}".format(a, b, result))
+    result3 = mul(a, b)
+    print("{:d} * {:d} = {:d}".format(a, b, result3))
 
-    result = mul(a, b)
-    print("{:d} * {:d} = {:d}".format(a, b, result))
-
-    result = div(a, b)
-    print("{:d} / {:d} = {:.0f}".format(a, b, result))
+    result4 = div(a, b)
+    print("{:d} / {:d} = {:.0f}".format(a, b, result4))
 
 
 if __name__ == "__main__":
