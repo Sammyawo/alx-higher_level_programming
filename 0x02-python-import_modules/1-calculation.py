@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def main():
+if __name__ == "__main__":
     from calculation_1 import add, sub, mul, div
 
 
@@ -16,7 +16,3 @@ def main():
 
     result4 = div(a, b)
     print("{:d} / {:d} = {:.0f}".format(a, b, result4))
-
-
-if __name__ == "__main__":
-    main()
