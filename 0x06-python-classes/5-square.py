@@ -4,10 +4,12 @@
 
 class Square:
     """ Private instance attribute: size
+
     property def size(self): to retrieve it
     property setter def size(self, value): to set it
     size must be an integer, otherwise raise a TypeError
     size is less than 0, raise a ValueError
+
     """
     def __init__(self, size=0):
         self.__size = size
@@ -33,8 +35,10 @@ class Square:
                 self.__size = value
 
         def my_print(self):
-            """def my_print(self):
+            """ def my_print(self):
+
             that prints in stdout the square with the character #
+
             """
             if self.__size != 0:
                 for i in range(self.__size):
