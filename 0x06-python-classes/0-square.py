@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Define an empty class square
-
-Task 0
-
-"""
+"""empty class square"""
 
 
 class Square:
+    """ This is an empty class
+
+    defining square
+
+    """
     pass
