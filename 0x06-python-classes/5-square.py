@@ -12,6 +12,7 @@ class Square:
 
     """
     def __init__(self, size=0):
+        """ Initializing the attribute """
         self.__size = size
         if not isinstance(self.__size, int):
             raise TypeError("size must be an integer")
@@ -23,10 +24,12 @@ class Square:
 
         @property
         def size(self):
+            """ getter """
             return self.__size
 
         @size.setter
         def size(self, value):
+            """ setter """
             if not isinstance(value, int):
                 raise TypeError("size must be an integer")
             elif value < 0:
