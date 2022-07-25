@@ -33,7 +33,7 @@ class Rectangle:
         """ Get height"""
         return self.__height
 
-    @height.sette
+    @height.setter
     def height(self, value):
         """ Set height"""
         if type(value) != int:
@@ -50,4 +50,5 @@ class Rectangle:
         """ Return the Rectangle Perimeter"""
         if self.__width == 0 or self.__height == 0:
             return 0
+
         return (2 * (self.__width + self.__height))
