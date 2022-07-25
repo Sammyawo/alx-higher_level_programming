@@ -10,10 +10,13 @@ class Rectangle:
     """Class Rectangle that defines a rectangle by
     : (based on 5-rectangle.py)
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """ Initialize instances"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -66,8 +69,8 @@ class Rectangle:
 
     def __repr__(self):
         """ Return a string representation of the rectangle"""
-        s = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
-        return s
+        s = '(' + str(self.__width) + ', ' + str(self.__height) + ')'
+        return self.__class__.__name__ + s
 
     def __del__(self):
         """ Print the message when an instance of Rectangle is deleted"""
