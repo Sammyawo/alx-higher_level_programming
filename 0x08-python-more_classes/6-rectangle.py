@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""5-rectangle module
+"""6-rectangle module
 
-Class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
+Class Rectangle that defines a rectangle by: (based on 5-rectangle.py)
 
 """
 
 
 class Rectangle:
     """Class Rectangle that defines a rectangle by
-    : (based on 4-rectangle.py)
+    : (based on 5-rectangle.py)
     """
     def __init__(self, width=0, height=0):
         """ Initialize instances"""
@@ -72,3 +72,4 @@ class Rectangle:
     def __del__(self):
         """ Print the message when an instance of Rectangle is deleted"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
