@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""3-rectangle module
+"""4-rectangle module
 
-Class Rectangle that defines a rectangle by: (based on 2-rectangle.py)
+Class Rectangle that defines a rectangle by: (based on 3-rectangle.py)
 
 """
 
 
 class Rectangle:
     """Class Rectangle that defines a rectangle by
-    : (based on 2-rectangle.py)
+    : (based on 3-rectangle.py)
     """
     def __init__(self, width=0, height=0):
         """ Initialize instances"""
@@ -62,4 +62,9 @@ class Rectangle:
                 s += ('#' * self.__width)
                 if i != self.__height - 1:
                     s += '\n'
+        return s
+
+    def __repr__(self):
+        """ Return a string representation of the rectangle"""
+        s = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
         return s
