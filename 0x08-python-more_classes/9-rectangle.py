@@ -74,7 +74,7 @@ class Rectangle:
         return self.__class__.__name__ + s
 
     def __del__(self):
-        """ Print the message when an instance of Rectangle is deleted"""
+        """Print the message when an instance of Rectangle is deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
@@ -97,5 +97,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-         """ Return a new Rectangle instance with width == height == size"""
+        """ Return a new Rectangle instance with width == height == size"""
          return cls(size, size)
