@@ -1,18 +1,20 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-if number >= 0:
-    number1 = number % 10
-    if number1 > 5:
-        print('Last digit of {:d} is {:d} and is greater than 5'.format(number, number1))
-    elif number1 == 0:
-        print('Last digit of {:d} is {:d} and is 0'.format(number, number1))
+inisen = "Last digit of {}".format(number)
+if number < 0:
+    lastdig = abs(number) % 10
+    if lastdig == 0:
+        medsen = "is {}".format(lastdig)
     else:
-        print('Last digit of {:d} is {:d} is less than 6 and not 0'.format(number, number1))
+        medsen = "is -{}".format(lastdig)
+    lastdig = lastdig * -1
 else:
-    number1 = -(number) % 10
-    number1 = -number1
-    if number1 == 0:
-        print('Last digit of {:d} is {:d} and is 0'.format(number, number1))
-    else:
-        print('Last digit of {:d} is {:d} is less than 6 and not 0'.format(number, number1))
+    lastdig = abs(number) % 10
+    medsen = "is {}".format(lastdig)
+if lastdig > 5:
+    print("{} {} and is greater than 5".format(inisen, medsen))
+elif lastdig == 0:
+    print("{} {} and is 0".format(inisen, medsen))
+elif lastdig < 6:
+    print("{} {} and is less than 6 and not 0".format(inisen, medsen))
